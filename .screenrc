@@ -1,0 +1,8 @@
+caption always '%{=B Wb}%y/%m/%d %c %{=B wb}%-w%{=B WR}[%n]%t%{=B wb}%+w'
+bindkey "^[[C" next
+bindkey "^[[D" prev
+bind b encoding big5 utf8 # Ctrl-a b to show text in Big5
+bind u encoding utf8 utf8 # Ctrl-a u to show text in UTF-8
+# make ssh agent forwarding work in screen
+# http://superuser.com/questions/180148/how-do-you-get-screen-to-automatically-connect-to-the-current-ssh-agent-when-re
+setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
