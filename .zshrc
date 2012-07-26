@@ -18,7 +18,7 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew history-substring-search vundle ssh-agent)
+plugins=(git osx brew history-substring-search vundle)
 
 source $ZSH/oh-my-zsh.sh
 
