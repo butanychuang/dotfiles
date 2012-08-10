@@ -37,5 +37,8 @@ alias ll='ls -lh'
 alias j='jobs'
 alias cl='clear'
 
+# Make filename completion sort by modification time
+zstyle ':completion:*' file-sort time
+
 # Load rvm, TODO: use oh-my-zsh
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
