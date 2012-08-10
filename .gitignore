@@ -1,6 +1,12 @@
-# Linux
 # OSX
+.DS_Store
+Icon
+
+# Thumbnails
+._*
+
 # vim
-.*
-!.gitignore
-*~
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
