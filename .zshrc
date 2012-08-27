@@ -32,6 +32,9 @@ HOSTNAME="`hostname`"
 PAGER='less'
 EDITOR='vim'
 
+# Fix git log mojibake
+export LESSCHARSET="utf-8"
+
 alias la='ls -lhA'
 alias ll='ls -lh'
 alias j='jobs'
