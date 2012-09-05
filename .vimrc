@@ -19,16 +19,13 @@ set guifont=Monaco:h12
 set guioptions-=T
 
 " 使用面板
-colorscheme yzlin256
+colorscheme Tomorrow-Night-Bright
 
 " 256 色
 set t_Co=256
 
 " 檔案格式優先
 set ffs=unix,dos ff=unix
-
-"設定背景顏色為黑色
-set background=dark
 
 " set mouse
 set mouse=a
@@ -71,9 +68,6 @@ set hlsearch
 " 加強式尋找功能，在鍵入 pattern 時會立即反應移動至目前鍵入之 pattern 上
 set incsearch
 
-" 設此是游標整行會標註顏色
-set cursorline
-
 " 設定檔案編碼清單
 set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le
 
@@ -89,9 +83,6 @@ set foldmethod=syntax
 
 " 方便中文重排設定
 set formatoptions=mtcql
-
-" 將註解由深藍色變灰色
-hi Comment ctermfg=240
 
 " allow using < & > to indent in visual mode
 :vnoremap < <gv
