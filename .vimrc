@@ -14,6 +14,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/AnsiEsc.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'kien/ctrlp.vim'
 
 " 設定 GUI 字型
 set guifont=Monaco:h12
