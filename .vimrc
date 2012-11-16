@@ -102,3 +102,9 @@ set showcmd
 " show spaces and tabs
 set list
 set listchars=tab:>-,trail:-
+
+" press enter to tabedit file in ctrlp
+let g:ctrlp_prompt_mappings = {
+\ 'AcceptSelection("e")': [],
+\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+\ }
