@@ -45,3 +45,6 @@ zstyle ':completion:*' file-sort time
 
 # Load rvm, TODO: use oh-my-zsh
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+# mosh hostname completion support
+compdef mosh=ssh
