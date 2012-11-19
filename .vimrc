@@ -42,12 +42,18 @@ set number
 " 顯示現在的模式
 set showmode
 
-" tab 相關設定，2 個空白, 空白取代 tab, 自動縮排 4 格
+" tab 相關設定
+" 輸入時將tab展開為空白
+" 將存在的tab顯示為8格
+" 按下tab鍵時縮排4格
+" 自動縮排(e.g. << and >>)時以4格為單位
+set expandtab
 set tabstop=8
 set softtabstop=4
-set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set smarttab
+
+" folding
 set fdm=indent
 set fdc=0
 
