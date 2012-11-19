@@ -30,7 +30,7 @@ LANG='zh_TW.UTF-8'
 HISTFILE=$HOME/.zhistory
 HOSTNAME="`hostname`"
 PAGER='less'
-EDITOR='vim'
+export EDITOR='vim'
 
 # Fix git log mojibake
 export LESSCHARSET="utf-8"
