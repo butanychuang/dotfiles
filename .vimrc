@@ -15,6 +15,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/AnsiEsc.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
 
 " 設定 GUI 字型
 set guifont=Monaco:h12
@@ -114,3 +115,8 @@ let g:ctrlp_prompt_mappings = {
 \ 'AcceptSelection("e")': [],
 \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
 \ }
+
+" make phpcs do not show warnings
+let g:syntastic_phpcs_conf = "-n"
+" disable syntastic
+let g:loaded_syntastic_plugin = 1
