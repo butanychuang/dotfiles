@@ -16,6 +16,11 @@ Bundle 'vim-scripts/AnsiEsc.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
+" dependencies of garbas/vim-snipmate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/vim-snippets"
+Bundle "garbas/vim-snipmate"
 
 " 設定 GUI 字型
 set guifont=Monaco:h12
