@@ -21,6 +21,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "honza/vim-snippets"
 Bundle "garbas/vim-snipmate"
+Bundle "uguu-org/vim-matrix-screensaver"
 
 " 設定 GUI 字型
 set guifont=Monaco:h12
