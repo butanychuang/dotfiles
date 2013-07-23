@@ -11,6 +11,7 @@ install:
 	test -e ${HOME}/.vim		|| ln -s ${PWD}/.vim		${HOME}/.vim
 	test -e ${HOME}/.screenrc	|| ln -s ${PWD}/.screenrc	${HOME}/.screenrc
 	test -e ${HOME}/.tmux.conf	|| ln -s ${PWD}/.tmux.conf	${HOME}/.tmux.conf
+	vim +BundleInstall +qall
 
 uninstall:
 	test -L ${HOME}/.gitconfig	&& rm ${HOME}/.gitconfig
