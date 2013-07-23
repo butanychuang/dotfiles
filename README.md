@@ -34,7 +34,6 @@ git config --global user.name example
 git config --global user.email example@localhost
 ```
 
-* open vim and ":BundleInstall"
 * customize .zsh/ssh-accounts.zsh
 * enable ssh-agent plugin in .zshrc
 
