@@ -24,6 +24,9 @@ Bundle "garbas/vim-snipmate"
 
 Bundle "uguu-org/vim-matrix-screensaver"
 Bundle "nathanaelkane/vim-indent-guides"
+" dependency of gregsexton/gitv
+Bundle "tpope/vim-fugitive"
+Bundle "gregsexton/gitv"
 
 " 設定 GUI 字型
 set guifont=Monaco:h12
