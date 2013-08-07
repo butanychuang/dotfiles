@@ -28,6 +28,8 @@ Bundle "nathanaelkane/vim-indent-guides"
 Bundle "tpope/vim-fugitive"
 Bundle "gregsexton/gitv"
 
+Bundle "uggedal/go-vim"
+
 " 設定 GUI 字型
 set guifont=Monaco:h12
 set guioptions-=T
