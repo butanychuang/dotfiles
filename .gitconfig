@@ -16,6 +16,7 @@
 	logs = log --stat --summary
 	logt = log --abbrev-commit --decorate --graph --color --pretty='format:%C(yellow)%h %Creset%s %C(magenta)%an %C(green)%ar'
 	diffs = diff --stat --summary
+	grepr = "!f() { git grep $1 -- $(git rev-parse --show-cdup); }; f"
 [push]
 	# for only push to current branch
 	default = tracking
