@@ -39,7 +39,6 @@ alias la='ls -lhA'
 alias ll='ls -lh'
 alias j='jobs'
 alias cl='clear'
-alias smupdate='cd `git rev-parse --show-toplevel` && git submodule update && cd -'
 
 # Make filename completion sort by modification time
 zstyle ':completion:*' file-sort time
