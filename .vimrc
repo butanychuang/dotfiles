@@ -30,6 +30,9 @@ Bundle "gregsexton/gitv"
 
 Bundle "uggedal/go-vim"
 
+" vundle required
+filetype plugin indent on
+
 " 設定 GUI 字型
 set guifont=Monaco:h12
 set guioptions-=T
