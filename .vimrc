@@ -29,6 +29,7 @@ Bundle "tpope/vim-fugitive"
 Bundle "gregsexton/gitv"
 
 Bundle "uggedal/go-vim"
+Bundle "vim-scripts/taglist.vim"
 
 " vundle required
 filetype plugin indent on
