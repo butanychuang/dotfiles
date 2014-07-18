@@ -23,7 +23,7 @@ plugins=(git osx brew history-substring-search vundle npm python composer)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
+PATH="${HOME}/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
 TZ="Asia/Taipei"
 LC_ALL='zh_TW.UTF-8'
 LANG='zh_TW.UTF-8'
