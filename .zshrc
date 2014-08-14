@@ -1,26 +1,34 @@
-# Path to your oh-my-zsh configuration.
-export ZSH=$HOME/.oh-my-zsh
+source $HOME/.antigen/antigen.zsh
 
-# Set custom plugin/theme directory
-export ZSH_CUSTOM=$HOME/.zsh
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-export ZSH_THEME="butany"
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle osx
+antigen bundle brew
+antigen bundle history-substring-search
+antigen bundle vundle
+antigen bundle npm
+antigen bundle python
+antigen bundle composer
+antigen bundle command-not-found
 
-# Comment this out to disable weekly auto-update checks
+# Bundles from repo.
+antigen bundle Tarrasch/zsh-bd
+
+# Load the theme.
+# TODO: local theme ?
+antigen theme butanychuang/dotfiles .zsh/butany
+
+# Tell antigen that you're done.
+antigen apply
+
+# Disable weekly auto-update checks
 export DISABLE_AUTO_UPDATE="true"
 
-# Uncomment following line if you want to disable autosetting terminal title.
+# Disable autosetting terminal title
 export DISABLE_AUTO_TITLE="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew history-substring-search vundle npm python composer)
-
-source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 PATH="${HOME}/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
