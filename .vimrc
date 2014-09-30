@@ -28,7 +28,6 @@ Bundle "nathanaelkane/vim-indent-guides"
 Bundle "tpope/vim-fugitive"
 Bundle "gregsexton/gitv"
 
-Bundle "uggedal/go-vim"
 Bundle "vim-scripts/taglist.vim"
 Bundle "scrooloose/nerdcommenter"
 
