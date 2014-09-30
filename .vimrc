@@ -4,35 +4,35 @@
 " load vundle
 set nocompatible
 filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/AnsiEsc.vim'
-Bundle 'sjl/gundo.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/AnsiEsc.vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
 " dependencies of garbas/vim-snipmate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/vim-snippets"
-Bundle "garbas/vim-snipmate"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
 
-Bundle "uguu-org/vim-matrix-screensaver"
-Bundle "nathanaelkane/vim-indent-guides"
+Plugin 'uguu-org/vim-matrix-screensaver'
+Plugin 'nathanaelkane/vim-indent-guides'
 " dependency of gregsexton/gitv
-Bundle "tpope/vim-fugitive"
-Bundle "gregsexton/gitv"
+Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
 
-Bundle "vim-scripts/taglist.vim"
-Bundle "scrooloose/nerdcommenter"
-Bundle "chrisbra/csv.vim"
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'chrisbra/csv.vim'
 
 " vundle required
+call vundle#end()
 filetype plugin indent on
 
 " 設定 GUI 字型
