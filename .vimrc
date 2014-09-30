@@ -30,6 +30,7 @@ Bundle "gregsexton/gitv"
 
 Bundle "vim-scripts/taglist.vim"
 Bundle "scrooloose/nerdcommenter"
+Bundle "chrisbra/csv.vim"
 
 " vundle required
 filetype plugin indent on
