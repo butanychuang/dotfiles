@@ -135,6 +135,4 @@ let g:ctrlp_prompt_mappings = {
 \ }
 
 " make phpcs do not show warnings
-let g:syntastic_phpcs_conf = "-n"
-" disable syntastic
-let g:loaded_syntastic_plugin = 1
+let g:syntastic_php_phpcs_args = "-n"
