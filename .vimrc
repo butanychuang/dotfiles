@@ -134,6 +134,11 @@ let g:ctrlp_prompt_mappings = {
 \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
 \ }
 
+" set syntastic to passive mode
+let g:syntastic_mode_map = {
+\ 'mode': 'passive',
+\ }
+
 " make phpcs do not show warnings
 let g:syntastic_php_phpcs_args = "-n"
 
