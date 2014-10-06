@@ -136,3 +136,8 @@ let g:ctrlp_prompt_mappings = {
 
 " make phpcs do not show warnings
 let g:syntastic_php_phpcs_args = "-n"
+
+" custom php comment style
+let g:NERDCustomDelimiters = {
+\ 'php': { 'left': '// '},
+\ }
