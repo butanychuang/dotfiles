@@ -147,3 +147,7 @@ let g:syntastic_php_phpcs_args = "-n"
 let g:NERDCustomDelimiters = {
 \ 'php': { 'left': '// '},
 \ }
+
+" macros
+let @v = 'yiwovar_dump($");exit;'
+let @p = 'yiwoprint_r($");exit;'
