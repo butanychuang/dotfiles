@@ -20,7 +20,7 @@
 	fixup = commit --amend --no-edit
 [push]
 	# for only push to current branch
-	default = tracking
+	default = upstream
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
