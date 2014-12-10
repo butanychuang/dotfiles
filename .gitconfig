@@ -16,6 +16,7 @@
 	logs = log --stat --summary
 	logt = log --abbrev-commit --decorate --graph --color --pretty='format:%C(yellow)%h %Creset%s %C(magenta)%an %C(green)%ar'
 	diffs = diff --stat --summary
+	difft = difftool
 	grepr = "!f() { git grep $1 -- $(git rev-parse --show-cdup); }; f"
 	fixup = commit --amend --no-edit
 [push]
@@ -26,3 +27,12 @@
 	excludesfile = ~/.gitignore
 [mergetool]
 	keepBackup = true
+[diff]
+	tool = icdiff
+[difftool]
+	prompt = false
+	trustExitCode = true
+[difftool "icdiff"]
+	cmd = icdiff --no-headers --no-bold $LOCAL $REMOTE
+[pager]
+	difftool = less
