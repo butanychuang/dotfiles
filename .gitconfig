@@ -33,6 +33,6 @@
 	prompt = false
 	trustExitCode = true
 [difftool "icdiff"]
-	cmd = icdiff --no-headers --no-bold $LOCAL $REMOTE
+	cmd = icdiff --no-bold $LOCAL $REMOTE
 [pager]
 	difftool = less
