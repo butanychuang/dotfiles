@@ -31,7 +31,7 @@ export DISABLE_AUTO_UPDATE="true"
 export DISABLE_AUTO_TITLE="true"
 
 # Customize to your needs...
-PATH="${HOME}/bin:${HOME}/node_modules/.bin:${HOME}/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
+PATH="${HOME}/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
 TZ="Asia/Taipei"
 LC_ALL='zh_TW.UTF-8'
 LANG='zh_TW.UTF-8'
