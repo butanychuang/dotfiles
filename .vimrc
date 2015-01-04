@@ -31,6 +31,7 @@ Plugin 'gregsexton/gitv'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'chrisbra/csv.vim'
+Plugin 'ConradIrwin/vim-bracketed-paste'
 
 " vundle required
 call vundle#end()
