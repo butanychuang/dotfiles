@@ -13,6 +13,7 @@ antigen bundle npm
 antigen bundle python
 antigen bundle composer
 antigen bundle command-not-found
+antigen bundle laravel5
 
 # Bundles from repo.
 antigen bundle Tarrasch/zsh-bd
