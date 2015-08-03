@@ -28,7 +28,6 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-fugitive'
 Plugin 'gregsexton/gitv'
 
-Plugin 'vim-scripts/taglist.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'chrisbra/csv.vim'
 Plugin 'ConradIrwin/vim-bracketed-paste'
