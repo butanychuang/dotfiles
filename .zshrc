@@ -49,7 +49,6 @@ alias ll='ls -lh'
 alias j='jobs'
 alias cl='clear'
 jd() { cd $(dirname $(readlink "$1")) }
-unset -f itunes
 
 # Make filename completion sort by modification time
 zstyle ':completion:*' file-sort time
