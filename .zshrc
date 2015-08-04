@@ -9,10 +9,8 @@ antigen bundle osx
 antigen bundle brew
 antigen bundle history-substring-search
 antigen bundle vundle
-antigen bundle npm
 antigen bundle python
 antigen bundle composer
-antigen bundle command-not-found
 antigen bundle laravel5
 
 # Bundles from repo.
