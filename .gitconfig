@@ -19,6 +19,7 @@
 	difft = difftool
 	grepr = "!f() { git grep $1 -- $(git rev-parse --show-cdup); }; f"
 	fixup = commit --amend --no-edit
+	sync = "!f() { git checkout -q --detach && git fetch -v origin +$1:$1 && git checkout $1; }; f"
 [push]
 	# for only push to current branch
 	default = upstream
