@@ -34,6 +34,7 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'chikamichi/mediawiki.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'pangloss/vim-javascript'
 
 " vundle required
 call vundle#end()
