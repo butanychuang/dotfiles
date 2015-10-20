@@ -33,6 +33,7 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'chikamichi/mediawiki.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'easymotion/vim-easymotion'
 
 " vundle required
 call vundle#end()
@@ -149,6 +150,12 @@ let g:syntastic_php_phpcs_args = "-n"
 let g:NERDCustomDelimiters = {
 \ 'php': { 'left': '// '},
 \ }
+
+" EasyMotion settings
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+nmap ' <Plug>(easymotion-s2)
+
 
 " macros
 let @v = 'yiwovar_dump($");exit;'
