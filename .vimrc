@@ -35,6 +35,7 @@ Plugin 'chikamichi/mediawiki.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pangloss/vim-javascript'
+Plugin 'StanAngeloff/php.vim'
 
 " vundle required
 call vundle#end()
@@ -157,6 +158,10 @@ let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
 nmap ' <Plug>(easymotion-s2)
 
+" php.vim settings
+let php_sql_query = 1
+let php_folding = 2
+let php_phpdoc_folding = 1
 
 " macros
 let @v = 'yiwovar_dump($");exit;'
