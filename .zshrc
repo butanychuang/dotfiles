@@ -9,6 +9,7 @@ antigen bundle osx
 antigen bundle brew
 antigen bundle history-substring-search
 antigen bundle vundle
+antigen bundle aws
 antigen bundle python
 antigen bundle composer
 antigen bundle laravel5
