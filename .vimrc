@@ -140,10 +140,14 @@ let g:ctrlp_prompt_mappings = {
 \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
 \ }
 
-" set syntastic to passive mode
+" syntastic settings
 let g:syntastic_mode_map = {
 \ 'mode': 'passive',
 \ }
+let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_javascript_standard_exec = 'semistandard'
+let g:syntastic_javascript_standard_generic = 1
+let g:syntastic_always_populate_loc_list = 1
 
 " make phpcs do not show warnings
 let g:syntastic_php_phpcs_args = "-n"
