@@ -17,6 +17,7 @@ antigen bundle laravel5
 # Bundles from repo.
 antigen bundle Tarrasch/zsh-bd
 antigen bundle jimmijj/zsh-syntax-highlighting
+antigen bundle tarruda/zsh-autosuggestions
 
 # Load the theme.
 # TODO: local theme ?
