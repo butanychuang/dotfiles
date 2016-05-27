@@ -12,6 +12,7 @@ install:
 	test -e ${HOME}/.screenrc	|| ln -s ${PWD}/.screenrc	${HOME}/.screenrc
 	test -e ${HOME}/.tmux.conf	|| ln -s ${PWD}/.tmux.conf	${HOME}/.tmux.conf
 	vim +PluginInstall +PluginUpdate +PluginClean +qall
+	antigen update
 
 uninstall:
 	test -L ${HOME}/.gitconfig	&& rm ${HOME}/.gitconfig
