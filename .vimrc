@@ -170,3 +170,6 @@ let php_phpdoc_folding = 1
 " macros
 let @v = 'yiwovar_dump($");exit;'
 let @p = 'yiwoprint_r($");exit;'
+
+" ctrlp settings
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
