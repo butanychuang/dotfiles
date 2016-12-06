@@ -157,6 +157,7 @@ let g:syntastic_php_phpcs_args = "-n"
 " custom php comment style
 let g:NERDCustomDelimiters = {
 \ 'php': { 'left': '// '},
+\ 'javascript': { 'left': '// '},
 \ }
 
 " EasyMotion settings
