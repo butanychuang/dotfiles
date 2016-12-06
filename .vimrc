@@ -36,6 +36,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pangloss/vim-javascript'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ternjs/tern_for_vim'
 
 " vundle required
 call vundle#end()
@@ -173,3 +175,6 @@ let @p = 'yiwoprint_r($");exit;'
 
 " ctrlp settings
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+" tern shortcut
+nmap \tt :TernDefTab<CR>
