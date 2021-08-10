@@ -28,6 +28,7 @@ antigen apply
 
 # Load autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 
 # Disable weekly auto-update checks
 export DISABLE_AUTO_UPDATE="true"
