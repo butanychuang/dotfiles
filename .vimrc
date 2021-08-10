@@ -30,6 +30,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pangloss/vim-javascript'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'gaving/vim-textobj-argument'
+Plugin 'elzr/vim-json'
 
 " vundle required
 call vundle#end()
