@@ -7,6 +7,7 @@
 	ci = commit -v
 	co = checkout
 	br = branch
+	brs = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 	st = status
 	mg = merge
 	fh = fetch
@@ -14,7 +15,8 @@
 	sh = stash
 	sm = submodule
 	logs = log --stat --summary
-	logt = log --abbrev-commit --decorate --graph --color --pretty='format:%C(yellow)%h %Creset%s %C(magenta)%an %C(green)%ar'
+	logt = log --abbrev-commit --decorate --graph --color --pretty='format:%C(yellow)%h %C(green)%ai %Creset%s %C(magenta)%an'
+	logrn = log --pretty='format:%ai %s'
 	diffs = diff --stat --summary
 	difft = difftool
 	grepr = "!f() { git grep $1 -- $(git rev-parse --show-cdup); }; f"
@@ -34,6 +36,6 @@
 	prompt = false
 	trustExitCode = true
 [difftool "icdiff"]
-	cmd = icdiff --no-bold $LOCAL $REMOTE
+	cmd = icdiff --line-numbers --highlight $LOCAL $REMOTE
 [pager]
 	difftool = less
