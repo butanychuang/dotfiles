@@ -15,12 +15,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'powerman/vim-plugin-AnsiEsc'
 Plugin 'sjl/gundo.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
-" dependencies of garbas/vim-snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
-Plugin 'garbas/vim-snipmate'
 
 Plugin 'uguu-org/vim-matrix-screensaver'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -36,8 +30,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pangloss/vim-javascript'
 Plugin 'StanAngeloff/php.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ternjs/tern_for_vim'
 
 " vundle required
 call vundle#end()
@@ -136,23 +128,15 @@ set showcmd
 set list
 set listchars=tab:>-,trail:-
 
+" Enable virtualedit
+" https://amikai.github.io/2021/05/23/vim-virtualedit/
+set virtualedit=block
+
 " press enter to tabedit file in ctrlp
 let g:ctrlp_prompt_mappings = {
 \ 'AcceptSelection("e")': [],
 \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
 \ }
-
-" syntastic settings
-let g:syntastic_mode_map = {
-\ 'mode': 'passive',
-\ }
-let g:syntastic_javascript_checkers = ['standard']
-let g:syntastic_javascript_standard_exec = 'semistandard'
-let g:syntastic_javascript_standard_generic = 1
-let g:syntastic_always_populate_loc_list = 1
-
-" make phpcs do not show warnings
-let g:syntastic_php_phpcs_args = "-n"
 
 " custom php comment style
 let g:NERDCustomDelimiters = {
@@ -170,12 +154,5 @@ let php_sql_query = 1
 let php_folding = 2
 let php_phpdoc_folding = 1
 
-" macros
-let @v = 'yiwovar_dump($");exit;'
-let @p = 'yiwoprint_r($");exit;'
-
 " ctrlp settings
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
-" tern shortcut
-nmap \tt :TernDefTab<CR>
