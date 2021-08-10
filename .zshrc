@@ -48,9 +48,6 @@ export EDITOR='vim'
 # Fix git log mojibake
 export LESSCHARSET="utf-8"
 
-alias la='ls -lhA'
-alias ll='ls -lh'
-alias j='jobs'
 alias cl='clear'
 jd() { cd $(dirname $(readlink "$1")) }
 
