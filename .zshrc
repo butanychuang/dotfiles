@@ -49,6 +49,11 @@ export EDITOR='vim'
 export LESSCHARSET="utf-8"
 
 alias cl='clear'
+alias vimjson='vim +"set ft=json"'
+if command -v exa &> /dev/null
+then
+    alias ls='exa --time-style iso --git -hF'
+fi
 jd() { cd $(dirname $(readlink "$1")) }
 
 # Make filename completion sort by modification time
