@@ -39,3 +39,8 @@
 	cmd = icdiff --line-numbers --highlight $LOCAL $REMOTE
 [pager]
 	difftool = less
+	branch = false
+[pull]
+	ff = only
+[log]
+	date = iso
