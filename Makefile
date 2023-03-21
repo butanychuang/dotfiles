@@ -11,7 +11,7 @@ install:
 	test -e ${HOME}/.vim		|| ln -s ${PWD}/.vim		${HOME}/.vim
 	test -e ${HOME}/.tmux.conf	|| ln -s ${PWD}/.tmux.conf	${HOME}/.tmux.conf
 	vim +PluginInstall +PluginUpdate +PluginClean +qall
-	antigen update
+	zsh ${HOME}/.zshrc
 
 uninstall:
 	test -L ${HOME}/.gitconfig	&& rm ${HOME}/.gitconfig
