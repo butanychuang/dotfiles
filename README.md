@@ -8,8 +8,8 @@ Usage
 ----------
 
 ```
-$ git clone git://github.com/butanychuang/dotfiles.git && cd dotfiles
-$ git submodule update --init
+$ git clone --recurse-submodules https://github.com/butanychuang/dotfiles.git
+$ cd dotfiles
 $ make install
 ```
 
@@ -19,7 +19,8 @@ Uninstallation
 ----------
 
 ```
-$ cd dotfiles && make uninstall
+$ cd dotfiles
+$ make uninstall
 ```
 
 
@@ -33,11 +34,6 @@ After make install
 git config --global user.name example
 git config --global user.email example@localhost
 ```
-
-* customize .zsh/ssh-accounts.zsh
-* enable ssh-agent plugin in .zshrc
-
-
 
 TODOs
 ----------
